@@ -2,7 +2,7 @@
   <br>
   <form id="shopping-list-add" (ngSubmit)="onSubmit(search.value)"  #f="ngForm">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search for City names, Zipcode..." [value]='text' required #search >
+      <input type="text" class="form-control" id="searchTextField" placeholder="Search for City names, Zipcode..." [value]='text' required #search >
       <span class="input-group-btn">
         <button class="btn btn-default" type="submit"  [disabled]="!f.valid">Search</button>
       </span>

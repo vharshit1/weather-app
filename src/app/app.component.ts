@@ -20,9 +20,7 @@ export class AppComponent implements OnInit{
 
     var input = document.getElementById('searchTextField');
     var options = {
-      componentRestrictions: {
-        country: 'us'
-      }
+      
     };
 
     var autocomplete = new google.maps.places.Autocomplete(input, options);

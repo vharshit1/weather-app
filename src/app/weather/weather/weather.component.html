@@ -1,0 +1,11 @@
+
+<br>
+<div *ngIf="!errorFlag"  class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{weatherData?.channel.location.city }} Weather</h3>
+  </div>
+  <div class="panel-body">
+    <h1> Current Temp: {{weatherData?.channel.item.condition.temp}} </h1>
+    <h4> {{weatherData?.channel.item.condition.text}} </h4>
+  </div>
+</div>
